@@ -10,7 +10,7 @@
        trackingId: 'UA-85414570-1',
        cookieDomain: 'auto',
        //name: 'myTracker',
-       userId: '12345',
+       userId: 'jianan',
        page: '/about',
        title: 'About Us'
       }); 
@@ -25,18 +25,18 @@
       //});
 
       // 这个是google定义的 event  ,貌似没有事件属性一说，而是使用 不同的事件来区分
-      ga('send', {
-        hitType: 'event',
-        eventCategory: 'Videos',
-        eventAction: 'play',
-        eventLabel: 'Fall Campaign',
-        eventValue: '42'
-      });
+        ga('send', {
+       hitType: 'event',
+       eventCategory: 'Videos',
+       eventAction: 'play',
+       eventLabel: 'Fall Campaign',
+       eventValue: '42'
+       });
 
          ga('send', {
         hitType: 'event',
         eventCategory: 'Videos',
-        eventAction: 'stop',
+        eventAction: 'buy',
         eventLabel: 'Fall Campaign',
         eventValue: '42'
       });
