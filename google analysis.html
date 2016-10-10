@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Google Analytics Test</title>
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+       //跟踪器 类似identify  你可以给它命名和添加属性 
+      ga('create', {
+       trackingId: 'UA-85414570-1',
+       cookieDomain: 'auto',
+       name: 'myTracker',
+       userId: '12345',
+       page: '/about',
+       title: 'About Us'
+      }); 
+
+      //ga('set', {
+      //page: '/About1',
+      //});
+
+      //ga(function() {
+      // Logs the "myTracker" tracker object to the console.
+      //console.log(ga.getByName('myTracker'));
+      //});
+
+      // 这个是google定义的 event  ,貌似没有事件属性一说，而是使用 不同的事件来区分
+      ga('send', {
+        hitType: 'event',
+        eventCategory: 'Videos',
+        eventAction: 'play',
+        eventLabel: 'Fall Campaign',
+        eventValue: '42'
+      });
+
+         ga('send', {
+        hitType: 'event',
+        eventCategory: 'Videos',
+        eventAction: 'stop',
+        eventLabel: 'Fall Campaign',
+        eventValue: '42'
+      });
+
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+</head>
+<body>
+<h1>测试应用</h1>
+</body>
+</html>
