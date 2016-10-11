@@ -28,6 +28,10 @@
       };
      amplitude.getInstance().logEvent('buy', eventProperties);
 
+     var identify = new amplitude.Identify().set('gender', 'female').set('age', 20);
+     amplitude.getInstance().identify(identify);
+
+
     </script>
 </head>
 <body>

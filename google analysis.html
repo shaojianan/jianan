@@ -9,8 +9,8 @@
       ga('create', {
        trackingId: 'UA-85414570-1',
        cookieDomain: 'auto',
-       //name: 'myTracker',
-       userId: 'jianan',
+       //name: 'myTracker',  将此字段注释掉，方不报错。建议不使用此字段
+       userId: '12345',
        page: '/about',
        title: 'About Us'
       }); 
@@ -24,22 +24,54 @@
       //console.log(ga.getByName('myTracker'));
       //});
 
-      // 这个是google定义的 event  ,貌似没有事件属性一说，而是使用 不同的事件来区分
-        ga('send', {
-       hitType: 'event',
-       eventCategory: 'Videos',
-       eventAction: 'play',
-       eventLabel: 'Fall Campaign',
-       eventValue: '42'
-       });
+      // 这个是google定义的 event  ,没有事件属性一说，而是使用 不同的事件来区分。事件类别 可以尝试当作事件使用
+      ga('send', {
+        hitType: 'event',
+        eventCategory: 'Videos',
+        eventAction: 'play',
+        eventLabel: 'Fall Campaign',
+        eventValue: '42'
+      });
 
          ga('send', {
         hitType: 'event',
         eventCategory: 'Videos',
-        eventAction: 'buy',
+        eventAction: 'stop',
         eventLabel: 'Fall Campaign',
         eventValue: '42'
       });
+
+
+      //google 案例
+
+        ga('send', {
+        hitType: 'event',
+        eventCategory: 'Videos',
+        eventAction: 'Video Load Time',
+        eventLabel: 'Baby First Birthday',
+        eventValue: '5'
+      });
+
+      //诸葛典型点位：成功修改漏斗
+        ga('send', {
+        hitType: 'event',
+        //类别，用于分组
+        eventCategory: '漏斗',
+        //操作，用户定义事件
+        eventAction: '成功修改漏斗',
+        //标签，用于记录事件额外信息（定义范围比我们的事件属性要小）
+        eventLabel: '用户筛选',
+        //值，用于记录"操作"产生的数值（例如 视频加载事件 的 数值）
+        eventValue: '0'
+      });
+
+
+
+
+
+
+
+
 
       ga('send', 'pageview');
     </script>
