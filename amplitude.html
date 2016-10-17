@@ -20,13 +20,14 @@
       amplitude.getInstance().init("5370e4ac12fc5c5f85b40046c366bd63");
 
 
-      amplitude.getInstance().setUserId('jianan');
+      amplitude.getInstance().setUserId('jianan1017');
       var eventProperties = {
-        'color': 'blue',
-        'count': 20,
-        'key': 'value'
+        '颜色': '黄色',
+        '数量': 10,
+        '详细': '123、456、789'
+       // 'key': 'value'
       };
-     amplitude.getInstance().logEvent('buy', eventProperties);
+     amplitude.getInstance().logEvent('购买商品', eventProperties);
 
      var identify = new amplitude.Identify().set('gender', 'female').set('age', 20);
      amplitude.getInstance().identify(identify);
