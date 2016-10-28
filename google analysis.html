@@ -7,7 +7,7 @@
       window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
        //跟踪器，在这里添加key 以及 识别用户ID， 但不能添加自建属性
       ga('create', {
-       trackingId: 'UA-85414570-1',
+       trackingId: 'UA-85414570-2',
        cookieDomain: 'auto',
        //跟踪器名称，使用此字段报异常。建议不使用此字段
        //name: 'myTracker',  
@@ -32,7 +32,7 @@
         eventValue: 5
       });
 
-               ga('send', {
+        ga('send', {
         hitType: 'event',
         eventCategory: 'Videos',
         eventAction: 'Video Load Time1',
@@ -42,14 +42,17 @@
 
       //诸葛典型点位套用 +详细说明
       
-
-
       //发送页面点位 +记录url
 
       ga('send', {
       hitType: 'pageview',
       page: location.pathname
       });
+
+      var dimensionValue = 'SOME_DIMENSION_VALUE';
+      ga('set', 'dimension1', 是否注册); 
+      ga('set', 'dimension1', 是否访问demo); 
+
 
     </script>
     <script async src='https://www.google-analytics.com/analytics.js'></script>
