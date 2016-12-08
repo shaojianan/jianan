@@ -5,43 +5,49 @@
     <title>Google Analytics Test</title>
     <script>
       window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-       //跟踪器 类似identify  你可以给它命名和添加属性 
+       //跟踪器，在这里添加key 以及 识别用户ID， 但不能添加自建属性
       ga('create', {
-       trackingId: 'UA-85414570-1',
+       trackingId: 'UA-85414570-2',
        cookieDomain: 'auto',
-       name: 'myTracker',
-       userId: '12345',
+       //跟踪器名称，使用此字段报异常。建议不使用此字段
+       //name: 'myTracker',  
+
+       //用户Id 填写掌握的用户唯一标示
+       userId: '88888',
+     
+       //clientId 必填 用于唯一标示匿名用户
+       //clientId: '35009a79-1a05-49d7-b876-2b884d0f825jianan1614',
        page: '/about',
        title: 'About Us'
       }); 
 
-      //ga('set', {
-      //page: '/About1',
-      //});
+  
+      //google定义的 event 实例，一次事件只能记录一个 eventLabel；想记录多个 就需要设定多个事件
 
-      //ga(function() {
-      // Logs the "myTracker" tracker object to the console.
-      //console.log(ga.getByName('myTracker'));
-      //});
+      //   ga('send', {
+       //  hitType: 'event',
+         //eventCategory: 'Videos',
+         //eventAction: 'Video Load Time',
+         //eventLabel: 'Baby Third Birthday',
+         //eventValue: 5
+       //});
 
-      // 这个是google定义的 event  ,貌似没有事件属性一说，而是使用 不同的事件来区分
+      
+
+      //诸葛典型点位套用 +详细说明
+      
+      //发送页面点位 +记录url
+
       ga('send', {
-        hitType: 'event',
-        eventCategory: 'Videos',
-        eventAction: 'play',
-        eventLabel: 'Fall Campaign',
-        eventValue: '42'
+      hitType: 'pageview',
+      page: location.pathname
       });
 
-         ga('send', {
-        hitType: 'event',
-        eventCategory: 'Videos',
-        eventAction: 'stop',
-        eventLabel: 'Fall Campaign',
-        eventValue: '42'
-      });
+      var dimensionValue = 'SOME_DIMENSION_VALUE';
+      ga('set', 'dimension1', 是否注册); 
+      ga('set', 'dimension1', 是否访问demo); 
 
-      ga('send', 'pageview');
+
     </script>
     <script async src='https://www.google-analytics.com/analytics.js'></script>
 </head>
