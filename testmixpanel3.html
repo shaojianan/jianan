@@ -1,0 +1,388 @@
+
+<!DOCTYPE html>
+<!--[if IE 6]><html class="ie lt-ie8"><![endif]-->
+<!--[if IE 7]><html class="ie lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="ie ie8"><![endif]-->
+<!--[if IE 9]><html class="ie ie9"><![endif]-->
+<!--[if !IE]><!--> <html> <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
+0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
+mixpanel.init("c8527716115b99eae09602d681d55b51");</script>
+<!-- end Mixpanel -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta http-equiv="Cache-Control" content="no-transform" />
+
+    <meta name="description"  content="我最近接触到gitbook，发现它支持markdown和git，刚好把我之前在github上的笔记可以生成一本书，于是我就开始着手捣鼓gitbook，一下午的时间就弄的差不多了，说明这个东西还是挺容易的，可以看看我的书：《LeetBook（LeetCode详解）》。比较建议直接在github上部署你的框架，然后再导入gitbook。创建一个新的仓库Alttext创建过程不需要我细讲了把，如果...">
+
+  <meta name="360-site-verification" content="604a14b53c6b871206001285921e81d8" />
+  <meta property="wb:webmaster" content="294ec9de89e7fadb" />
+  <meta property="qc:admins" content="104102651453316562112116375" />
+  <meta property="qc:admins" content="11635613706305617" />
+  <meta property="qc:admins" content="1163561616621163056375" />
+  <meta name="google-site-verification" content="cV4-qkUJZR6gmFeajx_UyPe47GW9vY6cnCrYtCHYNh4" />
+  <meta name="google-site-verification" content="HF7lfF8YEGs1qtCE-kPml8Z469e2RHhGajy6JPVy5XI" />
+  <meta http-equiv="mobile-agent" content="format=html5; url=http://www.jianshu.com/p/fa38ef97431d">
+
+  <!-- Apple -->
+  <meta name="apple-mobile-web-app-title" content="简书">
+
+    <!--  Meta for Smart App Banner -->
+  <meta name="apple-itunes-app" content="app-id=888237539, app-argument=jianshu://notes/3636486">
+  <!-- End -->
+
+  <!--  Meta for Twitter Card -->
+  <meta content="summary" property="twitter:card">
+  <meta content="@jianshucom" property="twitter:site">
+  <meta content="GitBook入门（用github做出第一本书）——超详细配图说明" property="twitter:title">
+  <meta content="我最近接触到gitbook，发现它支持markdown和git，刚好把我之前在github上的笔记可以生成一本书，于是我就开始着手捣鼓gitbook，一下午的时间就弄的差不多了，说明这个东西还是挺容易的，可以看看我的书：《LeetBook（LeetCode详解）》。比较建议直接在github上部署你的框架，然后再导入gitbook。创建一个新的仓库Alttext创建过程不需要我细讲了把，如果不知道，看看github入门Alttext创建一个新文件，名为SUMMARY.md，里面填入：#Summary..." property="twitter:description">
+  <meta content="http://www.jianshu.com/p/fa38ef97431d" property="twitter:url">
+  <!-- End -->
+
+  <!--  Meta for OpenGraph -->
+  <meta property="fb:app_id" content="865829053512461">
+  <meta property="og:site_name" content="简书">
+  <meta property="og:title" content="GitBook入门（用github做出第一本书）——超详细配图说明">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="http://www.jianshu.com/p/fa38ef97431d">
+  <meta property="og:description" content="我最近接触到gitbook，发现它支持markdown和git，刚好把我之前在github上的笔记可以生成一本书，于是我就开始着手捣鼓gitbook，一下午的时间就弄的差不多了，说明这个东西还是...">
+  <!-- End -->
+
+  <!--  Meta for Facebook Applinks -->
+  <meta property="al:ios:url" content="jianshu://notes/3636486" />
+  <meta property="al:ios:app_store_id" content="888237539" />
+  <meta property="al:ios:app_name" content="简书" />
+
+  <meta property="al:android:url" content="jianshu://notes/3636486" />
+  <meta property="al:android:package" content="com.jianshu.haruki" />
+  <meta property="al:android:app_name" content="简书" />
+  <!-- End -->
+
+
+    <title>GitBook入门（用github做出第一本书）——超详细配图说明 - 简书</title>
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="ksaLkTjaS3fxmgdPSyQ4UjlwCsuqFTJjm15WuzogK7k8RWe1v3tQ83SopLkNlZMFOr0ugVlEYY1HvfHydPTy/A==" />
+
+  <link rel="stylesheet" media="all" href="//cdn2.jianshu.io/assets/web-95e304998225f0f3021d.css" />
+  
+  <link rel="stylesheet" media="all" href="//cdn2.jianshu.io/assets/web/pages/notes/show/entry-95e304998225f0f3021d.css" />
+
+  <link href="//cdn2.jianshu.io/assets/favicons/favicon-783beb88ed621ceab614de960376ac0c.ico" rel="icon">
+      <link rel="apple-touch-icon-precomposed" href="//cdn2.jianshu.io/assets/apple-touch-icons/57-47624b2e2161e8eb144462c85db0a5ff.png" sizes="57x57" />
+      <link rel="apple-touch-icon-precomposed" href="//cdn2.jianshu.io/assets/apple-touch-icons/72-c00cde7cf98fc49e50cbb3ee1dcd5804.png" sizes="72x72" />
+      <link rel="apple-touch-icon-precomposed" href="//cdn2.jianshu.io/assets/apple-touch-icons/76-e8af0bdeaf1ba31e303b1fde8b5e66c4.png" sizes="76x76" />
+      <link rel="apple-touch-icon-precomposed" href="//cdn2.jianshu.io/assets/apple-touch-icons/114-f4c78569bbf1977e8382a5fd90c9237a.png" sizes="114x114" />
+      <link rel="apple-touch-icon-precomposed" href="//cdn2.jianshu.io/assets/apple-touch-icons/120-cf10c3711dba269522743729efe66bbc.png" sizes="120x120" />
+      <link rel="apple-touch-icon-precomposed" href="//cdn2.jianshu.io/assets/apple-touch-icons/152-7bd60457b5f3ecbf1343f0e6241be4f8.png" sizes="152x152" />
+</head>
+
+  <body lang="zh-CN" class="reader-black-font">
+    <!-- 全局顶部导航栏 -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="width-limit">
+    <!-- 左上方 Logo -->
+    <a class="logo" href="/"><img src="//cdn2.jianshu.io/assets/web/logo-58fd04f6f0de908401aa561cda6a0688.png" alt="Logo" /></a>
+
+    <!-- 右上角 -->
+      <!-- 未登录显示登录/注册/写文章 -->
+      <a class="btn write-btn" target="_blank" href="/writer#/">
+        <i class="iconfont ic-write"></i>写文章
+</a>      <a class="btn sign-up" href="/sign_up">注册</a>
+      <a class="btn log-in" href="/sign_in">登录</a>
+
+    <!-- 如果用户登录，显示下拉菜单 -->
+
+    <div id="view-mode-ctrl">
+    </div>
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="nav navbar-nav">
+            <li class="">
+              <a href="/">
+                <span class="menu-text">首页</span><i class="iconfont ic-navigation-discover menu-icon"></i>
+</a>            </li>
+            <li class="">
+              <a class="app-download-btn" href="/apps"><span class="menu-text">下载App</span><i class="iconfont ic-navigation-download menu-icon"></i></a>
+            </li>
+          <li class="search">
+            <form target="_blank" action="/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+              <input type="text" name="q" id="q" value="" placeholder="搜索" class="search-input" />
+              <a class="search-btn" href="javascript:void(null)"><i class="iconfont ic-search"></i></a>
+              <!-- <div id="navbar-trending-search"></div> -->
+</form>          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    
+<div class="note">
+  <div class="post">
+    <div class="article">
+        <h1 class="title">GitBook入门（用github做出第一本书）——超详细配图说明</h1>
+
+        <!-- 作者区域 -->
+        <div class="author">
+          <a class="avatar" href="/u/30f737ee0051">
+            <img src="//upload.jianshu.io/users/upload_avatars/1031810/88474d558987.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/144/h/144" alt="144" />
+</a>          <div class="info">
+            <span class="tag">作者</span>
+            <span class="name"><a href="/u/30f737ee0051">voidsky_很有趣儿</a></span>
+            <!-- 关注用户按钮 -->
+            <div data-author-follow-button></div>
+            <!-- 文章数据信息 -->
+            <div class="meta">
+              <!-- 如果文章更新时间大于发布时间，那么使用 tooltip 显示更新时间 -->
+                <span class="publish-time" data-toggle="tooltip" data-placement="bottom" title="最后编辑于 2016.04.19 10:43">2016.04.19 10:43*</span>
+              <span class="wordage">字数 777</span>
+            </div>
+          </div>
+          <!-- 如果是当前作者，加入编辑按钮 -->
+        </div>
+        <!-- -->
+
+        <!-- 文章内容 -->
+        <div class="show-content">
+          <blockquote><p>我最近接触到gitbook，发现它支持markdown和git，刚好把我之前在github上的笔记可以生成一本书，于是我就开始着手捣鼓gitbook，一下午的时间就弄的差不多了，说明这个东西还是挺容易的，可以看看我的书：<br><a href="https://www.gitbook.com/book/hk029/leetbook/details" target="_blank">《LeetBook（LeetCode详解）》</a>。</p></blockquote>
+<p>比较建议直接在github上部署你的框架，然后再导入gitbook。</p>
+<h1><strong>创建一个新的仓库</strong></h1>
+<div class="image-package">
+<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460872938384.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460872938384.png"><br><div class="image-caption">Alt text</div>
+</div>
+<p>创建过程不需要我细讲了把，如果不知道，看看<a href="http://blog.csdn.net/hk2291976/article/details/51137938" target="_blank">github入门</a></p>
+<div class="image-package">
+<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873055201.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873055201.png"><br><div class="image-caption">Alt text</div>
+</div>
+<p>创建一个新文件，名为SUMMARY.md，里面填入：</p>
+<pre><code># Summary
+* [前言](README.md)</code></pre>
+<h1><strong>创建一本书</strong></h1>
+<p>首先进入gitbook的官网：<a href="https://www.gitbook.com/" target="_blank">https://www.gitbook.com/</a></p>
+<div class="image-package">
+<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873213405.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873213405.png"><br><div class="image-caption">Alt text</div>
+</div>
+<p>点红色部分，用github登录</p>
+<p>登录之后，点+NewBook</p>
+<div class="image-package">
+<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873150045.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873150045.png"><br><div class="image-caption">Alt text</div>
+</div>
+<p>点到github，点击Link to your Github</p>
+<div class="image-package">
+<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873281405.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873281405.png"><br><div class="image-caption">Alt text</div>
+</div>
+<p>授权完毕然后再点到这个页面</p>
+<div class="image-package">
+<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873361930.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873361930.png"><br><div class="image-caption">Alt text</div>
+</div>
+<p>选择你需要导入的仓库，我们用刚才创建的testbook，然后标题可以自己取，下面的地址只能填英文，然后点创建</p>
+<div class="image-package">
+<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873428115.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873428115.png"><br><div class="image-caption">Alt text</div>
+</div>
+<p>这个页面目前是在同步，等同步完毕后，就可以看到自己的书了。</p>
+<div class="image-package">
+<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873464695.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873464695.png"><br><div class="image-caption">Alt text</div>
+</div>
+<p>可以点击read</p>
+<div class="image-package">
+<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873476030.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873476030.png"><br><div class="image-caption">Alt text</div>
+</div>
+<p>可以发现里面就1页，就是我们刚才SUMMARY.md写的内容</p>
+<div class="image-package">
+<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873506328.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873506328.png"><br><div class="image-caption">Alt text</div>
+</div>
+<h1><strong>增加内容</strong></h1>
+<p>我们退回上一步，点edit</p>
+<div class="image-package">
+<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873568057.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873568057.png"><br><div class="image-caption">Alt text</div>
+</div>
+<p>可以看到如下界面</p>
+<div class="image-package">
+<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873685992.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873685992.png"><br><div class="image-caption">Alt text</div>
+</div>
+<p>我们点开</p><div class="image-package">
+<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873711587.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873711587.png"><br><div class="image-caption">Alt text</div>
+</div>
+<p>可以同步显示编辑后的效果</p>
+<div class="image-package">
+<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873727085.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873727085.png"><br><div class="image-caption">Alt text</div>
+</div>
+<p>现在我们就可以完成我们的书的录入了，在目录区点击右键，可以新建一个内容页</p>
+<div class="image-package">
+<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873769499.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873769499.png"><br><div class="image-caption">Alt text</div>
+</div>
+<p>然后点击一下，会提示创建一个文件</p>
+<div class="image-package">
+<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873827988.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873827988.png"><br><div class="image-caption">Alt text</div>
+</div>
+<p>然后你会发现在github上也多了一个文件，这就关联起来了。</p>
+<div class="image-package">
+<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873857715.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873857715.png"><br><div class="image-caption">Alt text</div>
+</div>
+<p>我们再看SUMMARY里面多了一个“第一页”</p>
+<div class="image-package">
+<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873897194.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873897194.png"><br><div class="image-caption">Alt text</div>
+</div>
+<p>我们双击一下，发现就是markdown的超链接，原来这就是gitbook的内容组织方式，通过超连接把内容和github上文件关联起来。</p>
+<div class="image-package">
+<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873916920.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873916920.png"><br><div class="image-caption">Alt text</div>
+</div>
+<p>我们修改一下名字，然后把他缩进一个tab，保存看看有什么变化</p>
+<div class="image-package">
+<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460874020305.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460874020305.png"><br><div class="image-caption">Alt text</div>
+</div>
+<p>可以发现目录结构变了，然后名字也变了</p>
+<div class="image-package">
+<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460874055419.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460874055419.png"><br><div class="image-caption">Alt text</div>
+</div>
+<p>通过修改SUMMARY.md你可以轻松的组织你的书</p>
+<h1><strong>书的框架</strong></h1>
+<p>一般来说，你的书得有一个README.md和一个SUMMARY.md。<br>其中SUMMARY.md是最重要的，它代表了整个书的框架，也是我们主要需要修改的地方。</p>
+<p>当你考虑好要写一本书，你可以先粗略的想好大概要分几部分，对这几部分弄一个文件夹。然后把对应的markdown文件放进去。</p>
+<div class="image-package">
+<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460874300564.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460874300564.png"><br><div class="image-caption">Alt text</div>
+</div>
+<p>然后push到github上，然后再在gitbook上修改SUMAARY使得新加的文件得以跟gitbook关联</p>
+<div class="image-package">
+<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460879564173.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460879564173.png"><br><div class="image-caption">Alt text</div>
+</div>
+<p>关于地址的获取有个小诀窍，就是点击文件，邮件，有个重命名，这里可以看到文件的完整地址，复制就好。</p>
+<div class="image-package">
+<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460879603953.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460879603953.png"><br><div class="image-caption">Alt text</div>
+</div>
+<p>最后，可以在自己的书的主页点击read看看效果</p>
+<div class="image-package">
+<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460879667049.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460879667049.png"><br><div class="image-caption">Alt text</div>
+</div>
+
+        </div>
+        <!--  -->
+
+        <div class="show-foot">
+          <a class="notebook" href="/nb/3977725">
+            <i class="iconfont ic-search-notebook"></i> <span>好用的小工具</span>
+</a>          <div class="copyright" data-toggle="tooltip" data-html="true" data-original-title="转载请联系作者获得授权，并标注“简书作者”。">
+            © 著作权归作者所有
+          </div>
+          <div class="modal-wrap" data-report-note>
+            <a id="report-modal">举报文章</a>
+          </div>
+        </div>
+    </div>
+
+    <!-- 文章底部作者信息 -->
+      <div class="follow-detail">
+        <div class="info">
+          <a class="avatar" href="/u/30f737ee0051">
+            <img src="//upload.jianshu.io/users/upload_avatars/1031810/88474d558987.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/144/h/144" alt="144" />
+</a>          <div data-author-follow-button></div>
+          <a class="title" href="/u/30f737ee0051">voidsky_很有趣儿</a>
+        </div>
+          <div class="signature">简书推荐作者|在读小研|非典型程序猿|心理学爱好者
+爱思考，爱折腾，爱分享
+我的博客开通了：voidsky.cc
+微博：@voidsky就是爱折腾 
+微信公众号：vjiatd
+个人专题：秘诀
+
+简单，易懂是我的写作宗旨。
+小V坚信：写作不是目的，分享才是真理。
+
+爱探索新鲜好玩的事物
+爱发表与众不同的见解
+爱钻研非同寻常的方法
+
+小V就是这样一个非典型程序猿，如果你想听小V分享技术和生活的小经验，或者跟小v交流，欢迎关注我的微信和微博。
+
+（技术文发csdn：blog.csdn.net/hk2291976）</div>
+      </div>
+
+      <div class="support-author"></div>
+
+    <div class="meta-bottom">
+      <div class="btn like-group"></div>
+      <div class="share-group">
+        <a class="share-circle" data-action="weixin-share" data-toggle="tooltip" data-original-title="分享到微信">
+          <i class="iconfont ic-wechat"></i>
+        </a>
+        <a class="share-circle" data-toggle="tooltip" href="javascript:void((function(s,d,e,r,l,p,t,z,c){var%20f=&#39;http://v.t.sina.com.cn/share/share.php?appkey=1881139527&#39;,u=z||d.location,p=[&#39;&amp;url=&#39;,e(u),&#39;&amp;title=&#39;,e(t||d.title),&#39;&amp;source=&#39;,e(r),&#39;&amp;sourceUrl=&#39;,e(l),&#39;&amp;content=&#39;,c||&#39;gb2312&#39;,&#39;&amp;pic=&#39;,e(p||&#39;&#39;)].join(&#39;&#39;);function%20a(){if(!window.open([f,p].join(&#39;&#39;),&#39;mb&#39;,[&#39;toolbar=0,status=0,resizable=1,width=440,height=430,left=&#39;,(s.width-440)/2,&#39;,top=&#39;,(s.height-430)/2].join(&#39;&#39;)))u.href=[f,p].join(&#39;&#39;);};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent,&#39;&#39;,&#39;&#39;,&#39;http://cwb.assets.jianshu.io/notes/images/3636486/weibo/image_b9e5b50d9c2e.jpg&#39;, &#39;推荐 @voidsky就是爱折腾 的文章《GitBook入门（用github做出第一本书）——超详细配图说明》（ 分享自 @简书 ）&#39;,&#39;http://www.jianshu.com/p/fa38ef97431d?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=weibo&#39;,&#39;页面编码gb2312|utf-8默认gb2312&#39;));" data-original-title="分享到微博">
+          <i class="iconfont ic-weibo"></i>
+        </a>
+          <a class="share-circle" data-toggle="tooltip" href="http://cwb.assets.jianshu.io/notes/images/3636486/weibo/image_b9e5b50d9c2e.jpg" target="_blank" data-original-title="下载长微博图片">
+            <i class="iconfont ic-picture"></i>
+          </a>
+        <a class="share-circle more-share" tabindex="0" data-toggle="popover" data-placement="top" data-html="true" data-trigger="focus" href="javascript:void(0);" data-content='
+          <ul class="share-list">
+            <li><a href="javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=&#39;+e(&#39;http://www.jianshu.com/p/fa38ef97431d?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=qzone&#39;)+&#39;&amp;title=&#39;+e(&#39;推荐 voidsky_很有趣儿 的文章《GitBook入门（用github做出第一本书）——超详细配图说明》&#39;),x=function(){if(!window.open(r,&#39;qzone&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=600,height=600&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();"><i class="social-icon-sprite social-icon-zone"></i><span>分享到QQ空间</span></a></li>
+            <li><a href="javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;https://twitter.com/share?url=&#39;+e(&#39;http://www.jianshu.com/p/fa38ef97431d?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=twitter&#39;)+&#39;&amp;text=&#39;+e(&#39;推荐 voidsky_很有趣儿 的文章《GitBook入门（用github做出第一本书）——超详细配图说明》（ 分享自 @jianshucom ）&#39;)+&#39;&amp;related=&#39;+e(&#39;jianshucom&#39;),x=function(){if(!window.open(r,&#39;twitter&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=600,height=600&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();"><i class="social-icon-sprite social-icon-twitter"></i><span>分享到Twitter</span></a></li>
+            <li><a href="javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;https://www.facebook.com/dialog/share?app_id=483126645039390&amp;display=popup&amp;href=http://www.jianshu.com/p/fa38ef97431d?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=facebook&#39;,x=function(){if(!window.open(r,&#39;facebook&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();"><i class="social-icon-sprite social-icon-facebook"></i><span>分享到Facebook</span></a></li>
+            <li><a href="javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;https://plus.google.com/share?url=&#39;+e(&#39;http://www.jianshu.com/p/fa38ef97431d?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=google_plus&#39;),x=function(){if(!window.open(r,&#39;google_plus&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();"><i class="social-icon-sprite social-icon-google"></i><span>分享到Google+</span></a></li>
+            <li><a href="javascript:void(function(){var d=document,e=encodeURIComponent,s1=window.getSelection,s2=d.getSelection,s3=d.selection,s=s1?s1():s2?s2():s3?s3.createRange().text:&#39;&#39;,r=&#39;http://www.douban.com/recommend/?url=&#39;+e(&#39;http://www.jianshu.com/p/fa38ef97431d?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=douban&#39;)+&#39;&amp;title=&#39;+e(&#39;GitBook入门（用github做出第一本书）——超详细配图说明&#39;)+&#39;&amp;sel=&#39;+e(s)+&#39;&amp;v=1&#39;,x=function(){if(!window.open(r,&#39;douban&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330&#39;))location.href=r+&#39;&amp;r=1&#39;};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})()"><i class="social-icon-sprite social-icon-douban"></i><span>分享到豆瓣</span></a></li>
+          </ul>
+        '>更多分享</a>
+      </div>
+    </div>
+    <div id="vue_comment"></div>
+  </div>
+
+  <div class="vue-side-tool"></div>
+</div>
+<div class="js-included-collections"></div>
+
+    <script type="application/json" data-name="page-data">{"user_signed_in":false,"locale":"zh-CN","os":"mac","read_mode":"day","read_font":"font2","note_show":{"is_author":false,"is_following_author":false,"is_liked_note":false,"uuid":"8ccece4f-812c-455e-9d3a-90336b21f2d5"},"note":{"id":3636486,"slug":"fa38ef97431d","user_id":1031810,"notebook_id":3977725,"commentable":true,"likes_count":19,"views_count":1912,"public_wordage":777,"comments_count":2,"author":{"total_wordage":97534,"followers_count":4109,"total_likes_count":10392}}}</script>
+    
+    <script src="//cdn2.jianshu.io/assets/babel-polyfill-95e304998225f0f3021d.js"></script>
+    <script src="//cdn2.jianshu.io/assets/web-base-95e304998225f0f3021d.js"></script>
+<script src="//cdn2.jianshu.io/assets/web-95e304998225f0f3021d.js"></script>
+    
+    <script src="//cdn2.jianshu.io/assets/web/pages/notes/show/entry-95e304998225f0f3021d.js"></script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35169517-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?0c0e9d9b1e7d617b3e6842e85b9fb068";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+<script>
+  (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      }
+      else {
+          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+  })();
+</script>
+
+  </body>
+</html>
