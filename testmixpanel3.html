@@ -1,388 +1,571 @@
 
-<!DOCTYPE html>
-<!--[if IE 6]><html class="ie lt-ie8"><![endif]-->
-<!--[if IE 7]><html class="ie lt-ie8"><![endif]-->
-<!--[if IE 8]><html class="ie ie8"><![endif]-->
-<!--[if IE 9]><html class="ie ie9"><![endif]-->
-<!--[if !IE]><!--> <html> <!--<![endif]-->
 
+
+
+<!DOCTYPE html>
+<html>
+<html xmlns:wb="http://open.weibo.com/wb">                    
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
+<title>
+GrowthHacking &amp; 数据驱动 &#8211; 诸葛io</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+<meta name="description" content="精细化数据分析工具">
+<meta name="keywords" content="GrowthHacking &amp; 数据驱动 &#8211; 诸葛io">
+<link rel="shortcut icon" href="http://blog.zhugeio.com/wp-content/themes/yzipi/images/favicon.ico" />
+<link rel="stylesheet" href="http://blog.zhugeio.com/wp-content/themes/yzipi/style.css" />
+<link rel="stylesheet" href="http://blog.zhugeio.com/wp-content/themes/yzipi/yzipi-pc.css" />
+<link rel="stylesheet" href="http://blog.zhugeio.com/wp-content/themes/yzipi/yzipi-ipad.css" />
+<link rel="stylesheet" href="http://blog.zhugeio.com/wp-content/themes/yzipi/yzipi-phone.css" />
+<link rel="stylesheet" href="http://blog.zhugeio.com/wp-content/themes/yzipi/yzipi-phone2.css" />
+<script src="http://blog.zhugeio.com/wp-content/themes/yzipi/js/html5shiv.js"></script>
+<script src="http://blog.zhugeio.com/wp-content/themes/yzipi/js/css3-mediaqueries.js"></script>
+<script src="http://blog.zhugeio.com/wp-content/themes/yzipi/js/selectivizr-min.js"></script>
+<script src="http://blog.zhugeio.com/wp-content/themes/yzipi/js/jquery.1.11.1.js" type="text/javascript"></script>
+<!-- start Mixpanel -->
+    <script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
 0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
 for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
 mixpanel.init("c8527716115b99eae09602d681d55b51");</script>
 <!-- end Mixpanel -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
-  <meta http-equiv="Cache-Control" content="no-siteapp" />
-  <meta http-equiv="Cache-Control" content="no-transform" />
+<script type="text/javascript">
+var appKey = "5f8a935cd15a47419df0e07d0547551b";
+window.zhuge = window.zhuge || [];
+window.zhuge.methods = "_init debug identify track trackLink trackForm page".split(" ");
+window.zhuge.factory = function(b) {
+    return function() {
+        var a = Array.prototype.slice.call(arguments);
+        a.unshift(b);
+        window.zhuge.push(a);
+        return window.zhuge
+    }
+};
+for (var i = 0; i < window.zhuge.methods.length; i++) {
+    var key = window.zhuge.methods[i];
+    window.zhuge[key] = window.zhuge.factory(key)
+}
+window.zhuge.load = function(b, x) {
+    if (!document.getElementById("zhuge-js")) {
+        var a = document.createElement("script");
+        var verDate = new Date();
+        var verStr = verDate.getFullYear().toString()
+            + verDate.getMonth().toString() + verDate.getDate().toString();
 
-    <meta name="description"  content="我最近接触到gitbook，发现它支持markdown和git，刚好把我之前在github上的笔记可以生成一本书，于是我就开始着手捣鼓gitbook，一下午的时间就弄的差不多了，说明这个东西还是挺容易的，可以看看我的书：《LeetBook（LeetCode详解）》。比较建议直接在github上部署你的框架，然后再导入gitbook。创建一个新的仓库Alttext创建过程不需要我细讲了把，如果...">
+        a.type = "text/javascript";
+        a.id = "zhuge-js";
+        a.async = !0;
+        a.src = (location.protocol == 'http:' ? "http://sdk.zhugeio.com/zhuge-lastest.min.js?v=" : 'https://zgsdk.zhugeio.com/zhuge-lastest.min.js?v=') + verStr;
+        var c = document.getElementsByTagName("script")[0];
+        c.parentNode.insertBefore(a, c);
+        window.zhuge._init(b, x)
+    }
+};
+window.zhuge.load(appKey);
+</script>
+<script src="http://blog.zhugeio.com/wp-content/themes/yzipi/js/main.js" type="text/javascript"></script>
 
-  <meta name="360-site-verification" content="604a14b53c6b871206001285921e81d8" />
-  <meta property="wb:webmaster" content="294ec9de89e7fadb" />
-  <meta property="qc:admins" content="104102651453316562112116375" />
-  <meta property="qc:admins" content="11635613706305617" />
-  <meta property="qc:admins" content="1163561616621163056375" />
-  <meta name="google-site-verification" content="cV4-qkUJZR6gmFeajx_UyPe47GW9vY6cnCrYtCHYNh4" />
-  <meta name="google-site-verification" content="HF7lfF8YEGs1qtCE-kPml8Z469e2RHhGajy6JPVy5XI" />
-  <meta http-equiv="mobile-agent" content="format=html5; url=http://www.jianshu.com/p/fa38ef97431d">
-
-  <!-- Apple -->
-  <meta name="apple-mobile-web-app-title" content="简书">
-
-    <!--  Meta for Smart App Banner -->
-  <meta name="apple-itunes-app" content="app-id=888237539, app-argument=jianshu://notes/3636486">
-  <!-- End -->
-
-  <!--  Meta for Twitter Card -->
-  <meta content="summary" property="twitter:card">
-  <meta content="@jianshucom" property="twitter:site">
-  <meta content="GitBook入门（用github做出第一本书）——超详细配图说明" property="twitter:title">
-  <meta content="我最近接触到gitbook，发现它支持markdown和git，刚好把我之前在github上的笔记可以生成一本书，于是我就开始着手捣鼓gitbook，一下午的时间就弄的差不多了，说明这个东西还是挺容易的，可以看看我的书：《LeetBook（LeetCode详解）》。比较建议直接在github上部署你的框架，然后再导入gitbook。创建一个新的仓库Alttext创建过程不需要我细讲了把，如果不知道，看看github入门Alttext创建一个新文件，名为SUMMARY.md，里面填入：#Summary..." property="twitter:description">
-  <meta content="http://www.jianshu.com/p/fa38ef97431d" property="twitter:url">
-  <!-- End -->
-
-  <!--  Meta for OpenGraph -->
-  <meta property="fb:app_id" content="865829053512461">
-  <meta property="og:site_name" content="简书">
-  <meta property="og:title" content="GitBook入门（用github做出第一本书）——超详细配图说明">
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="http://www.jianshu.com/p/fa38ef97431d">
-  <meta property="og:description" content="我最近接触到gitbook，发现它支持markdown和git，刚好把我之前在github上的笔记可以生成一本书，于是我就开始着手捣鼓gitbook，一下午的时间就弄的差不多了，说明这个东西还是...">
-  <!-- End -->
-
-  <!--  Meta for Facebook Applinks -->
-  <meta property="al:ios:url" content="jianshu://notes/3636486" />
-  <meta property="al:ios:app_store_id" content="888237539" />
-  <meta property="al:ios:app_name" content="简书" />
-
-  <meta property="al:android:url" content="jianshu://notes/3636486" />
-  <meta property="al:android:package" content="com.jianshu.haruki" />
-  <meta property="al:android:app_name" content="简书" />
-  <!-- End -->
+<meta name='robots' content='noindex,follow' />
+<link rel="alternate" type="application/rss+xml" title="GrowthHacking &amp; 数据驱动 - 诸葛io &raquo; Feed" href="http://blog.zhugeio.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="GrowthHacking &amp; 数据驱动 - 诸葛io &raquo; 评论Feed" href="http://blog.zhugeio.com/comments/feed/" />
+    <script type="text/javascript">
+      window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/blog.zhugeio.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.2"}};
+      !function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d"),f=String.fromCharCode;return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(f(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(f(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(f(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(f(55357,56835),0,0):e.fillText(f(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+    </script>
+    <style type="text/css">
+img.wp-smiley,
+img.emoji {
+  display: inline !important;
+  border: none !important;
+  box-shadow: none !important;
+  height: 1em !important;
+  width: 1em !important;
+  margin: 0 .07em !important;
+  vertical-align: -0.1em !important;
+  background: none !important;
+  padding: 0 !important;
+}
+</style>
+<script type="text/javascript">
+var duoshuoQuery = {"short_name":"zhugeio","sso":{"login":"http:\/\/blog.zhugeio.com\/wp-login.php?action=duoshuo_login","logout":"http:\/\/blog.zhugeio.com\/wp-login.php?action=logout&_wpnonce=75701258db"},"theme":"default","stylePatch":"wordpress\/\u67da\u5b50\u76ae"};
+duoshuoQuery.sso.login += '&redirect_to=' + encodeURIComponent(window.location.href);
+duoshuoQuery.sso.logout += '&redirect_to=' + encodeURIComponent(window.location.href);
+</script>
+    <script type="text/javascript" src="http://static.duoshuo.com/embed.js" charset="UTF-8" async="async"></script>
+<link rel='https://api.w.org/' href='http://blog.zhugeio.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blog.zhugeio.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog.zhugeio.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.4.2" />
 
 
-    <title>GitBook入门（用github做出第一本书）——超详细配图说明 - 简书</title>
 
-  <meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="ksaLkTjaS3fxmgdPSyQ4UjlwCsuqFTJjm15WuzogK7k8RWe1v3tQ83SopLkNlZMFOr0ugVlEYY1HvfHydPTy/A==" />
 
-  <link rel="stylesheet" media="all" href="//cdn2.jianshu.io/assets/web-95e304998225f0f3021d.css" />
-  
-  <link rel="stylesheet" media="all" href="//cdn2.jianshu.io/assets/web/pages/notes/show/entry-95e304998225f0f3021d.css" />
-
-  <link href="//cdn2.jianshu.io/assets/favicons/favicon-783beb88ed621ceab614de960376ac0c.ico" rel="icon">
-      <link rel="apple-touch-icon-precomposed" href="//cdn2.jianshu.io/assets/apple-touch-icons/57-47624b2e2161e8eb144462c85db0a5ff.png" sizes="57x57" />
-      <link rel="apple-touch-icon-precomposed" href="//cdn2.jianshu.io/assets/apple-touch-icons/72-c00cde7cf98fc49e50cbb3ee1dcd5804.png" sizes="72x72" />
-      <link rel="apple-touch-icon-precomposed" href="//cdn2.jianshu.io/assets/apple-touch-icons/76-e8af0bdeaf1ba31e303b1fde8b5e66c4.png" sizes="76x76" />
-      <link rel="apple-touch-icon-precomposed" href="//cdn2.jianshu.io/assets/apple-touch-icons/114-f4c78569bbf1977e8382a5fd90c9237a.png" sizes="114x114" />
-      <link rel="apple-touch-icon-precomposed" href="//cdn2.jianshu.io/assets/apple-touch-icons/120-cf10c3711dba269522743729efe66bbc.png" sizes="120x120" />
-      <link rel="apple-touch-icon-precomposed" href="//cdn2.jianshu.io/assets/apple-touch-icons/152-7bd60457b5f3ecbf1343f0e6241be4f8.png" sizes="152x152" />
 </head>
-
-  <body lang="zh-CN" class="reader-black-font">
-    <!-- 全局顶部导航栏 -->
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="width-limit">
-    <!-- 左上方 Logo -->
-    <a class="logo" href="/"><img src="//cdn2.jianshu.io/assets/web/logo-58fd04f6f0de908401aa561cda6a0688.png" alt="Logo" /></a>
-
-    <!-- 右上角 -->
-      <!-- 未登录显示登录/注册/写文章 -->
-      <a class="btn write-btn" target="_blank" href="/writer#/">
-        <i class="iconfont ic-write"></i>写文章
-</a>      <a class="btn sign-up" href="/sign_up">注册</a>
-      <a class="btn log-in" href="/sign_in">登录</a>
-
-    <!-- 如果用户登录，显示下拉菜单 -->
-
-    <div id="view-mode-ctrl">
-    </div>
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-      <div class="collapse navbar-collapse" id="menu">
-        <ul class="nav navbar-nav">
-            <li class="">
-              <a href="/">
-                <span class="menu-text">首页</span><i class="iconfont ic-navigation-discover menu-icon"></i>
-</a>            </li>
-            <li class="">
-              <a class="app-download-btn" href="/apps"><span class="menu-text">下载App</span><i class="iconfont ic-navigation-download menu-icon"></i></a>
-            </li>
-          <li class="search">
-            <form target="_blank" action="/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
-              <input type="text" name="q" id="q" value="" placeholder="搜索" class="search-input" />
-              <a class="search-btn" href="javascript:void(null)"><i class="iconfont ic-search"></i></a>
-              <!-- <div id="navbar-trending-search"></div> -->
-</form>          </li>
-        </ul>
-      </div>
-    </div>
+<body>
+<header id="header-web">
+  <div class="header-main">
+    <hgroup class="logo">
+      <h1><a href="https://zhugeio.com/" title="GrowthHacking &amp; 数据驱动 &#8211; 诸葛io" rel="home"><img src="http://blog.zhugeio.com/wp-content/themes/yzipi/images/logo_2.png" alt="GrowthHacking &amp; 数据驱动 &#8211; 诸葛io"></a></h1>
+      <h3>
+        精细化数据分析工具      </h3>
+    </hgroup>
+  <div class="icon-menu"></div>
+    <!--logo-->
+    <nav class="header-nav">
+      <ul id="menu-xin_wen_zi_xun" class="menu"><li id="menu-item-116" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-116"><a href="https://zhugeio.com/index/login.jsp">登录</a></li>
+<li id="menu-item-80" class="bluebtn menu-item menu-item-type-custom menu-item-object-custom menu-item-80"><a href="https://zhugeio.com/index/signup.jsp?action=1#/one">注册</a></li>
+</ul>    </nav>
+    <!--header-nav-->   
   </div>
-</nav>
-
-    
-<div class="note">
-  <div class="post">
-    <div class="article">
-        <h1 class="title">GitBook入门（用github做出第一本书）——超详细配图说明</h1>
-
-        <!-- 作者区域 -->
-        <div class="author">
-          <a class="avatar" href="/u/30f737ee0051">
-            <img src="//upload.jianshu.io/users/upload_avatars/1031810/88474d558987.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/144/h/144" alt="144" />
-</a>          <div class="info">
-            <span class="tag">作者</span>
-            <span class="name"><a href="/u/30f737ee0051">voidsky_很有趣儿</a></span>
-            <!-- 关注用户按钮 -->
-            <div data-author-follow-button></div>
-            <!-- 文章数据信息 -->
-            <div class="meta">
-              <!-- 如果文章更新时间大于发布时间，那么使用 tooltip 显示更新时间 -->
-                <span class="publish-time" data-toggle="tooltip" data-placement="bottom" title="最后编辑于 2016.04.19 10:43">2016.04.19 10:43*</span>
-              <span class="wordage">字数 777</span>
-            </div>
-          </div>
-          <!-- 如果是当前作者，加入编辑按钮 -->
-        </div>
-        <!-- -->
-
-        <!-- 文章内容 -->
-        <div class="show-content">
-          <blockquote><p>我最近接触到gitbook，发现它支持markdown和git，刚好把我之前在github上的笔记可以生成一本书，于是我就开始着手捣鼓gitbook，一下午的时间就弄的差不多了，说明这个东西还是挺容易的，可以看看我的书：<br><a href="https://www.gitbook.com/book/hk029/leetbook/details" target="_blank">《LeetBook（LeetCode详解）》</a>。</p></blockquote>
-<p>比较建议直接在github上部署你的框架，然后再导入gitbook。</p>
-<h1><strong>创建一个新的仓库</strong></h1>
-<div class="image-package">
-<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460872938384.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460872938384.png"><br><div class="image-caption">Alt text</div>
-</div>
-<p>创建过程不需要我细讲了把，如果不知道，看看<a href="http://blog.csdn.net/hk2291976/article/details/51137938" target="_blank">github入门</a></p>
-<div class="image-package">
-<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873055201.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873055201.png"><br><div class="image-caption">Alt text</div>
-</div>
-<p>创建一个新文件，名为SUMMARY.md，里面填入：</p>
-<pre><code># Summary
-* [前言](README.md)</code></pre>
-<h1><strong>创建一本书</strong></h1>
-<p>首先进入gitbook的官网：<a href="https://www.gitbook.com/" target="_blank">https://www.gitbook.com/</a></p>
-<div class="image-package">
-<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873213405.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873213405.png"><br><div class="image-caption">Alt text</div>
-</div>
-<p>点红色部分，用github登录</p>
-<p>登录之后，点+NewBook</p>
-<div class="image-package">
-<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873150045.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873150045.png"><br><div class="image-caption">Alt text</div>
-</div>
-<p>点到github，点击Link to your Github</p>
-<div class="image-package">
-<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873281405.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873281405.png"><br><div class="image-caption">Alt text</div>
-</div>
-<p>授权完毕然后再点到这个页面</p>
-<div class="image-package">
-<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873361930.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873361930.png"><br><div class="image-caption">Alt text</div>
-</div>
-<p>选择你需要导入的仓库，我们用刚才创建的testbook，然后标题可以自己取，下面的地址只能填英文，然后点创建</p>
-<div class="image-package">
-<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873428115.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873428115.png"><br><div class="image-caption">Alt text</div>
-</div>
-<p>这个页面目前是在同步，等同步完毕后，就可以看到自己的书了。</p>
-<div class="image-package">
-<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873464695.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873464695.png"><br><div class="image-caption">Alt text</div>
-</div>
-<p>可以点击read</p>
-<div class="image-package">
-<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873476030.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873476030.png"><br><div class="image-caption">Alt text</div>
-</div>
-<p>可以发现里面就1页，就是我们刚才SUMMARY.md写的内容</p>
-<div class="image-package">
-<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873506328.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873506328.png"><br><div class="image-caption">Alt text</div>
-</div>
-<h1><strong>增加内容</strong></h1>
-<p>我们退回上一步，点edit</p>
-<div class="image-package">
-<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873568057.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873568057.png"><br><div class="image-caption">Alt text</div>
-</div>
-<p>可以看到如下界面</p>
-<div class="image-package">
-<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873685992.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873685992.png"><br><div class="image-caption">Alt text</div>
-</div>
-<p>我们点开</p><div class="image-package">
-<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873711587.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873711587.png"><br><div class="image-caption">Alt text</div>
-</div>
-<p>可以同步显示编辑后的效果</p>
-<div class="image-package">
-<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873727085.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873727085.png"><br><div class="image-caption">Alt text</div>
-</div>
-<p>现在我们就可以完成我们的书的录入了，在目录区点击右键，可以新建一个内容页</p>
-<div class="image-package">
-<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873769499.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873769499.png"><br><div class="image-caption">Alt text</div>
-</div>
-<p>然后点击一下，会提示创建一个文件</p>
-<div class="image-package">
-<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873827988.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873827988.png"><br><div class="image-caption">Alt text</div>
-</div>
-<p>然后你会发现在github上也多了一个文件，这就关联起来了。</p>
-<div class="image-package">
-<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873857715.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873857715.png"><br><div class="image-caption">Alt text</div>
-</div>
-<p>我们再看SUMMARY里面多了一个“第一页”</p>
-<div class="image-package">
-<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873897194.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873897194.png"><br><div class="image-caption">Alt text</div>
-</div>
-<p>我们双击一下，发现就是markdown的超链接，原来这就是gitbook的内容组织方式，通过超连接把内容和github上文件关联起来。</p>
-<div class="image-package">
-<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873916920.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460873916920.png"><br><div class="image-caption">Alt text</div>
-</div>
-<p>我们修改一下名字，然后把他缩进一个tab，保存看看有什么变化</p>
-<div class="image-package">
-<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460874020305.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460874020305.png"><br><div class="image-caption">Alt text</div>
-</div>
-<p>可以发现目录结构变了，然后名字也变了</p>
-<div class="image-package">
-<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460874055419.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460874055419.png"><br><div class="image-caption">Alt text</div>
-</div>
-<p>通过修改SUMMARY.md你可以轻松的组织你的书</p>
-<h1><strong>书的框架</strong></h1>
-<p>一般来说，你的书得有一个README.md和一个SUMMARY.md。<br>其中SUMMARY.md是最重要的，它代表了整个书的框架，也是我们主要需要修改的地方。</p>
-<p>当你考虑好要写一本书，你可以先粗略的想好大概要分几部分，对这几部分弄一个文件夹。然后把对应的markdown文件放进去。</p>
-<div class="image-package">
-<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460874300564.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460874300564.png"><br><div class="image-caption">Alt text</div>
-</div>
-<p>然后push到github上，然后再在gitbook上修改SUMAARY使得新加的文件得以跟gitbook关联</p>
-<div class="image-package">
-<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460879564173.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460879564173.png"><br><div class="image-caption">Alt text</div>
-</div>
-<p>关于地址的获取有个小诀窍，就是点击文件，邮件，有个重命名，这里可以看到文件的完整地址，复制就好。</p>
-<div class="image-package">
-<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460879603953.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460879603953.png"><br><div class="image-caption">Alt text</div>
-</div>
-<p>最后，可以在自己的书的主页点击read看看效果</p>
-<div class="image-package">
-<img src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460879667049.png" data-original-src="https://raw.githubusercontent.com/hk029/blog/master/%E5%B7%A5%E5%85%B7/GitBook%E5%85%A5%E9%97%A8/1460879667049.png"><br><div class="image-caption">Alt text</div>
-</div>
-
-        </div>
-        <!--  -->
-
-        <div class="show-foot">
-          <a class="notebook" href="/nb/3977725">
-            <i class="iconfont ic-search-notebook"></i> <span>好用的小工具</span>
-</a>          <div class="copyright" data-toggle="tooltip" data-html="true" data-original-title="转载请联系作者获得授权，并标注“简书作者”。">
-            © 著作权归作者所有
-          </div>
-          <div class="modal-wrap" data-report-note>
-            <a id="report-modal">举报文章</a>
-          </div>
-        </div>
+</header>
+<!--header-web-->
+<div id="main">
+  <div id="container">
+        <section class="list"> <span class="titleimg">
+     <div class="mecc">
+      <h2 class="mecctitle"> <a href="http://blog.zhugeio.com/zhu_ge_io_kong_miao_rang_shu_ju_geng_hao_di_fu_wu_yu_ye_wu_zeng_chang/">
+        诸葛io孔淼：让数据更好地服务于「业务增长」        </a> 
+      </h2>
+      <address class="meccaddress">
+        诸葛io 
+        <time>
+          06.15       </time>
+        
+      </address>
+      <span class="titleimg">
+      
+        <a href="http://blog.zhugeio.com/zhu_ge_io_kong_miao_rang_shu_ju_geng_hao_di_fu_wu_yu_ye_wu_zeng_chang/">
+                    <img width="700" height="348" src="http://blog.zhugeio.com/wp-content/uploads/2017/06/1-1-700x348.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="1" />                 </a> 
+        
+        
+        
+      </span>  
+      <p>
+诸葛io创始人&amp;CEO孔淼在诸葛io场景化解决方案发布会上致辞
+6月6日，主题为“洞悉用户 驾驭增长”的诸葛io场景化解决方案发布会成功举办，诸葛io发布围绕营销领域广告监测、获取分析、智能触达三大场景化解决方案，及八大行业解决方案，助力企业业务腾飞。
+本文整理自诸葛io创始人&amp;CEO孔淼在诸葛io场景...</p>            
+      <a href="http://blog.zhugeio.com/zhu_ge_io_kong_miao_rang_shu_ju_geng_hao_di_fu_wu_yu_ye_wu_zeng_chang/" title="阅读全文" id="yuedu">阅读全文</a>
     </div>
+    
+     
+     
+      <div class="clear"></div>
+    </section>
+    <div class="clear"></div>
+        <section class="list"> <span class="titleimg">
+     <div class="mecc">
+      <h2 class="mecctitle"> <a href="http://blog.zhugeio.com/shen_ru_chang_jing_dong_cha_yong_hu_zhu_ge_io_jue_sheng_2017_guo_ji_hei_ke_song_da_sai/">
+        深入场景洞察用户 诸葛io决胜2017国际黑客松大赛        </a> 
+      </h2>
+      <address class="meccaddress">
+        诸葛io 
+        <time>
+          06.15       </time>
+        
+      </address>
+      <span class="titleimg">
+      
+        <a href="http://blog.zhugeio.com/shen_ru_chang_jing_dong_cha_yong_hu_zhu_ge_io_jue_sheng_2017_guo_ji_hei_ke_song_da_sai/">
+                    <img width="700" height="348" src="http://blog.zhugeio.com/wp-content/uploads/2017/06/1-700x348.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="1" />                 </a> 
+        
+        
+        
+      </span>  
+      <p>经历48小时的脑力激荡，诸葛io从13支国内顶尖队伍中脱颖而出，成为2017国际黑客松大赛中国区的获胜队，将在年底进行中国区的最终对决，并与南京银行一起，代表中国参加法国巴黎银行全球黑客松总决赛。
+2017国际黑客松大赛是由法国巴黎银行发起，邀请创新型公司参与解决银行内部痛点的国际型赛事。中国区赛事由...</p>           
+      <a href="http://blog.zhugeio.com/shen_ru_chang_jing_dong_cha_yong_hu_zhu_ge_io_jue_sheng_2017_guo_ji_hei_ke_song_da_sai/" title="阅读全文" id="yuedu">阅读全文</a>
+    </div>
+    
+     
+     
+      <div class="clear"></div>
+    </section>
+    <div class="clear"></div>
+        <section class="list"> <span class="titleimg">
+     <div class="mecc">
+      <h2 class="mecctitle"> <a href="http://blog.zhugeio.com/shu_ju_shi_qu_dong_sheng_yi_xiang_qian_gun_dong_fa_zhan_de_wei_yi_zhi_dao/">
+        数据是驱动生意向前滚动发展的唯一之道        </a> 
+      </h2>
+      <address class="meccaddress">
+        诸葛io 
+        <time>
+          06.14       </time>
+        
+      </address>
+      <span class="titleimg">
+      
+        <a href="http://blog.zhugeio.com/shu_ju_shi_qu_dong_sheng_yi_xiang_qian_gun_dong_fa_zhan_de_wei_yi_zhi_dao/">
+                    <img width="700" height="348" src="http://blog.zhugeio.com/wp-content/uploads/2017/06/黄_meitu_1_meitu_1-1-700x348.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="黄_meitu_1_meitu_1" />                 </a> 
+        
+        
+        
+      </span>  
+      <p>上周
+诸葛io场景化解决方案发布会，现场火爆，宾朋满座
 
-    <!-- 文章底部作者信息 -->
-      <div class="follow-detail">
-        <div class="info">
-          <a class="avatar" href="/u/30f737ee0051">
-            <img src="//upload.jianshu.io/users/upload_avatars/1031810/88474d558987.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/144/h/144" alt="144" />
-</a>          <div data-author-follow-button></div>
-          <a class="title" href="/u/30f737ee0051">voidsky_很有趣儿</a>
-        </div>
-          <div class="signature">简书推荐作者|在读小研|非典型程序猿|心理学爱好者
-爱思考，爱折腾，爱分享
-我的博客开通了：voidsky.cc
-微博：@voidsky就是爱折腾 
-微信公众号：vjiatd
-个人专题：秘诀
-
-简单，易懂是我的写作宗旨。
-小V坚信：写作不是目的，分享才是真理。
-
-爱探索新鲜好玩的事物
-爱发表与众不同的见解
-爱钻研非同寻常的方法
-
-小V就是这样一个非典型程序猿，如果你想听小V分享技术和生活的小经验，或者跟小v交流，欢迎关注我的微信和微博。
-
-（技术文发csdn：blog.csdn.net/hk2291976）</div>
-      </div>
-
-      <div class="support-author"></div>
-
-    <div class="meta-bottom">
-      <div class="btn like-group"></div>
-      <div class="share-group">
-        <a class="share-circle" data-action="weixin-share" data-toggle="tooltip" data-original-title="分享到微信">
-          <i class="iconfont ic-wechat"></i>
-        </a>
-        <a class="share-circle" data-toggle="tooltip" href="javascript:void((function(s,d,e,r,l,p,t,z,c){var%20f=&#39;http://v.t.sina.com.cn/share/share.php?appkey=1881139527&#39;,u=z||d.location,p=[&#39;&amp;url=&#39;,e(u),&#39;&amp;title=&#39;,e(t||d.title),&#39;&amp;source=&#39;,e(r),&#39;&amp;sourceUrl=&#39;,e(l),&#39;&amp;content=&#39;,c||&#39;gb2312&#39;,&#39;&amp;pic=&#39;,e(p||&#39;&#39;)].join(&#39;&#39;);function%20a(){if(!window.open([f,p].join(&#39;&#39;),&#39;mb&#39;,[&#39;toolbar=0,status=0,resizable=1,width=440,height=430,left=&#39;,(s.width-440)/2,&#39;,top=&#39;,(s.height-430)/2].join(&#39;&#39;)))u.href=[f,p].join(&#39;&#39;);};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent,&#39;&#39;,&#39;&#39;,&#39;http://cwb.assets.jianshu.io/notes/images/3636486/weibo/image_b9e5b50d9c2e.jpg&#39;, &#39;推荐 @voidsky就是爱折腾 的文章《GitBook入门（用github做出第一本书）——超详细配图说明》（ 分享自 @简书 ）&#39;,&#39;http://www.jianshu.com/p/fa38ef97431d?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=weibo&#39;,&#39;页面编码gb2312|utf-8默认gb2312&#39;));" data-original-title="分享到微博">
-          <i class="iconfont ic-weibo"></i>
-        </a>
-          <a class="share-circle" data-toggle="tooltip" href="http://cwb.assets.jianshu.io/notes/images/3636486/weibo/image_b9e5b50d9c2e.jpg" target="_blank" data-original-title="下载长微博图片">
-            <i class="iconfont ic-picture"></i>
-          </a>
-        <a class="share-circle more-share" tabindex="0" data-toggle="popover" data-placement="top" data-html="true" data-trigger="focus" href="javascript:void(0);" data-content='
-          <ul class="share-list">
-            <li><a href="javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=&#39;+e(&#39;http://www.jianshu.com/p/fa38ef97431d?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=qzone&#39;)+&#39;&amp;title=&#39;+e(&#39;推荐 voidsky_很有趣儿 的文章《GitBook入门（用github做出第一本书）——超详细配图说明》&#39;),x=function(){if(!window.open(r,&#39;qzone&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=600,height=600&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();"><i class="social-icon-sprite social-icon-zone"></i><span>分享到QQ空间</span></a></li>
-            <li><a href="javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;https://twitter.com/share?url=&#39;+e(&#39;http://www.jianshu.com/p/fa38ef97431d?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=twitter&#39;)+&#39;&amp;text=&#39;+e(&#39;推荐 voidsky_很有趣儿 的文章《GitBook入门（用github做出第一本书）——超详细配图说明》（ 分享自 @jianshucom ）&#39;)+&#39;&amp;related=&#39;+e(&#39;jianshucom&#39;),x=function(){if(!window.open(r,&#39;twitter&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=600,height=600&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();"><i class="social-icon-sprite social-icon-twitter"></i><span>分享到Twitter</span></a></li>
-            <li><a href="javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;https://www.facebook.com/dialog/share?app_id=483126645039390&amp;display=popup&amp;href=http://www.jianshu.com/p/fa38ef97431d?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=facebook&#39;,x=function(){if(!window.open(r,&#39;facebook&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();"><i class="social-icon-sprite social-icon-facebook"></i><span>分享到Facebook</span></a></li>
-            <li><a href="javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;https://plus.google.com/share?url=&#39;+e(&#39;http://www.jianshu.com/p/fa38ef97431d?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=google_plus&#39;),x=function(){if(!window.open(r,&#39;google_plus&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();"><i class="social-icon-sprite social-icon-google"></i><span>分享到Google+</span></a></li>
-            <li><a href="javascript:void(function(){var d=document,e=encodeURIComponent,s1=window.getSelection,s2=d.getSelection,s3=d.selection,s=s1?s1():s2?s2():s3?s3.createRange().text:&#39;&#39;,r=&#39;http://www.douban.com/recommend/?url=&#39;+e(&#39;http://www.jianshu.com/p/fa38ef97431d?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=douban&#39;)+&#39;&amp;title=&#39;+e(&#39;GitBook入门（用github做出第一本书）——超详细配图说明&#39;)+&#39;&amp;sel=&#39;+e(s)+&#39;&amp;v=1&#39;,x=function(){if(!window.open(r,&#39;douban&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330&#39;))location.href=r+&#39;&amp;r=1&#39;};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})()"><i class="social-icon-sprite social-icon-douban"></i><span>分享到豆瓣</span></a></li>
+诸葛io场景化解决方案发布会现场
+&nbsp;
+很荣幸诸葛君邀请到了青云QingCloud CEO黄允松亲临现场并发表致辞，黄允松开门见山地表示：数据的价值非常大，数据是驱动生意向前滚动发展的唯一之道。因为它，让我们人类的社会能够走向下一时代，就是完全AI的...</p>            
+      <a href="http://blog.zhugeio.com/shu_ju_shi_qu_dong_sheng_yi_xiang_qian_gun_dong_fa_zhan_de_wei_yi_zhi_dao/" title="阅读全文" id="yuedu">阅读全文</a>
+    </div>
+    
+     
+     
+      <div class="clear"></div>
+    </section>
+    <div class="clear"></div>
+        <section class="list"> <span class="titleimg">
+     <div class="mecc">
+      <h2 class="mecctitle"> <a href="http://blog.zhugeio.com/chu_da_geng_jia_you_hao_geng_jia_zhu_ge_io_zhi_neng_chu_da_jie_jue_fang_an/">
+        触达更佳 友好更加—诸葛io智能触达解决方案        </a> 
+      </h2>
+      <address class="meccaddress">
+        诸葛io 
+        <time>
+          06.08       </time>
+        
+      </address>
+      <span class="titleimg">
+      
+        <a href="http://blog.zhugeio.com/chu_da_geng_jia_you_hao_geng_jia_zhu_ge_io_zhi_neng_chu_da_jie_jue_fang_an/">
+                    <img src="http://blog.zhugeio.com/wp-content/themes/yzipi/images/blog_03.png" style="display:none"/>
+                  </a> 
+        
+        
+        
+      </span>  
+      <p>数据发现的本质是更快速有效的应用改善。诸葛io此前提供了全新的API2.0接口，帮助企业实现数据联通和平台间数据对接。诸葛io智能触达解决方案在此基础上，实现自动化运营解决方案，一站式的精准触达目标用户：通过可视化的方式，创建运营活动，门槛低、效率高；支持新客关怀、转化促进、复购提醒、流失召回等...</p>            
+      <a href="http://blog.zhugeio.com/chu_da_geng_jia_you_hao_geng_jia_zhu_ge_io_zhi_neng_chu_da_jie_jue_fang_an/" title="阅读全文" id="yuedu">阅读全文</a>
+    </div>
+    
+     
+     
+      <div class="clear"></div>
+    </section>
+    <div class="clear"></div>
+        <section class="list"> <span class="titleimg">
+     <div class="mecc">
+      <h2 class="mecctitle"> <a href="http://blog.zhugeio.com/you_hua_huo_ke_cheng_ben_ji_xiao_shuai_zhu_ge_io_huo_qu_fen_xi_jie_jue_fang_an/">
+        优化获客成本及效率—诸葛io获取分析解决方案        </a> 
+      </h2>
+      <address class="meccaddress">
+        诸葛io 
+        <time>
+          06.08       </time>
+        
+      </address>
+      <span class="titleimg">
+      
+        <a href="http://blog.zhugeio.com/you_hua_huo_ke_cheng_ben_ji_xiao_shuai_zhu_ge_io_huo_qu_fen_xi_jie_jue_fang_an/">
+                    <img src="http://blog.zhugeio.com/wp-content/themes/yzipi/images/blog_03.png" style="display:none"/>
+                  </a> 
+        
+        
+        
+      </span>  
+      <p>关注用户获取过程中从何（渠道）而来，因何（内容创意）而来，还原用户获取的情景，找到高质量用户的关注点，优化获客成本。企业可根据自身业务设定转化目标，渠道效果一键衡量，降低分析门槛，全面支持UTM标准化渠道定义。同时，诸葛io通过技术合并Deepshare公司，基于Deferred Deeplinking技术还原用户跳转...</p>            
+      <a href="http://blog.zhugeio.com/you_hua_huo_ke_cheng_ben_ji_xiao_shuai_zhu_ge_io_huo_qu_fen_xi_jie_jue_fang_an/" title="阅读全文" id="yuedu">阅读全文</a>
+    </div>
+    
+     
+     
+      <div class="clear"></div>
+    </section>
+    <div class="clear"></div>
+        <section class="list"> <span class="titleimg">
+     <div class="mecc">
+      <h2 class="mecctitle"> <a href="http://blog.zhugeio.com/jian_ce_liu_liang_you_hua_zhi_liang_zhu_ge_io_guang_gao_jian_ce_jie_jue_fang_an/">
+        监测流量优化质量—诸葛io广告监测解决方案       </a> 
+      </h2>
+      <address class="meccaddress">
+        诸葛io 
+        <time>
+          06.08       </time>
+        
+      </address>
+      <span class="titleimg">
+      
+        <a href="http://blog.zhugeio.com/jian_ce_liu_liang_you_hua_zhi_liang_zhu_ge_io_guang_gao_jian_ce_jie_jue_fang_an/">
+                    <img src="http://blog.zhugeio.com/wp-content/themes/yzipi/images/blog_03.png" style="display:none"/>
+                  </a> 
+        
+        
+        
+      </span>  
+      <p>不同于传统广告监测产品，诸葛io广告监测解决方案，打通曝光点击到付费转化，从用户全生命周期的角度衡量广告投放，打通用户广告行为与应用行为；准确的流量与用户LTV，实现真正的广告效果衡量分析；分钟级实时监测，支持企业对广告投放的快速决策与优化；同时，支持数据开放访问，便于企业对数据进行二次和深...</p>            
+      <a href="http://blog.zhugeio.com/jian_ce_liu_liang_you_hua_zhi_liang_zhu_ge_io_guang_gao_jian_ce_jie_jue_fang_an/" title="阅读全文" id="yuedu">阅读全文</a>
+    </div>
+    
+     
+     
+      <div class="clear"></div>
+    </section>
+    <div class="clear"></div>
+        <section class="list"> <span class="titleimg">
+     <div class="mecc">
+      <h2 class="mecctitle"> <a href="http://blog.zhugeio.com/cong_jin_tian_qi_gei_ni_zhu_ru_ke_ying_yong_yu_ye_wu_zeng_chang_de_shu_ju_qu_dong_li/">
+        从今天起，给你注入可应用于「业务增长」的数据驱动力       </a> 
+      </h2>
+      <address class="meccaddress">
+        诸葛io 
+        <time>
+          06.08       </time>
+        
+      </address>
+      <span class="titleimg">
+      
+        <a href="http://blog.zhugeio.com/cong_jin_tian_qi_gei_ni_zhu_ru_ke_ying_yong_yu_ye_wu_zeng_chang_de_shu_ju_qu_dong_li/">
+                    <img width="700" height="348" src="http://blog.zhugeio.com/wp-content/uploads/2017/06/5.25微信头图-700x348.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="5.25微信头图" />                 </a> 
+        
+        
+        
+      </span>  
+      <p>历史上的6月6日：
+1944年-盟军在法国诺曼底登陆；
+1966年-无人宇宙飞船拍下月球表面照片。
+这一天曾发生过很多有转折且具有划时代意义的重大事件，同样在2017年6月6日，在互联网时代多元化商业模式和细分市场的快速发展的背景下，众多行业面临着高昂获客成本和高流失率的双重挑战，诸葛io开启了从用户洞察到数...</p>            
+      <a href="http://blog.zhugeio.com/cong_jin_tian_qi_gei_ni_zhu_ru_ke_ying_yong_yu_ye_wu_zeng_chang_de_shu_ju_qu_dong_li/" title="阅读全文" id="yuedu">阅读全文</a>
+    </div>
+    
+     
+     
+      <div class="clear"></div>
+    </section>
+    <div class="clear"></div>
+        <section class="list"> <span class="titleimg">
+     <div class="mecc">
+      <h2 class="mecctitle"> <a href="http://blog.zhugeio.com/shou_ba_shou_jiao_ni_ru_he_rang_yong_hu_liu_xia_lai_bing_chan_sheng_jia_zhi/">
+        手把手教你「如何让用户留下来并产生价值」        </a> 
+      </h2>
+      <address class="meccaddress">
+        诸葛io 
+        <time>
+          06.02       </time>
+        
+      </address>
+      <span class="titleimg">
+      
+        <a href="http://blog.zhugeio.com/shou_ba_shou_jiao_ni_ru_he_rang_yong_hu_liu_xia_lai_bing_chan_sheng_jia_zhi/">
+                    <img width="700" height="348" src="http://blog.zhugeio.com/wp-content/uploads/2017/06/六一头图-700x348.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="六一头图" />                 </a> 
+        
+        
+        
+      </span>  
+      <p>儿童节，与其“撒娇打滚卖萌”的“（假装）重返童年”，不如学学如何让用户重返你的产品来得实用（恩，点进来的都是热爱工作的宝宝），所以今天的推送很贴心哦，手把手，用案例教你。本文整理自诸葛io高级数据驱动顾问王叶鑫在小咖秀活动中的发言，通过案例详细说明，如何让用户留下来并产生价值，全文分5部分：
+1...</p>            
+      <a href="http://blog.zhugeio.com/shou_ba_shou_jiao_ni_ru_he_rang_yong_hu_liu_xia_lai_bing_chan_sheng_jia_zhi/" title="阅读全文" id="yuedu">阅读全文</a>
+    </div>
+    
+     
+     
+      <div class="clear"></div>
+    </section>
+    <div class="clear"></div>
+        <section class="list"> <span class="titleimg">
+     <div class="mecc">
+      <h2 class="mecctitle"> <a href="http://blog.zhugeio.com/cheng_yao_can_jia_zhu_ge_io_chang_jing_hua_jie_jue_fang_an_fa_bu_hui/">
+        诚邀参加 | 诸葛io场景化解决方案发布会       </a> 
+      </h2>
+      <address class="meccaddress">
+        诸葛io 
+        <time>
+          06.01       </time>
+        
+      </address>
+      <span class="titleimg">
+      
+        <a href="http://blog.zhugeio.com/cheng_yao_can_jia_zhu_ge_io_chang_jing_hua_jie_jue_fang_an_fa_bu_hui/">
+                    <img width="700" height="348" src="http://blog.zhugeio.com/wp-content/uploads/2017/06/5.25微信头图-1-700x348.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="5.25微信头图" />                 </a> 
+        
+        
+        
+      </span>  
+      <p>如何精准定位获客渠道？
+如何精细化运营，挖掘更大的用户价值？
+如何根据用户生命周期，减少用户流失？洞察客户流失的真实原因？
+从数据到价值，如何利用大数据营销推广？
+···
+随着互联网时代多元化商业模式和细分市场的快速发展，众多行业面临着高昂获客成本和高流失率的双重挑战。
+数据驱动不仅是技术手段，...</p>           
+      <a href="http://blog.zhugeio.com/cheng_yao_can_jia_zhu_ge_io_chang_jing_hua_jie_jue_fang_an_fa_bu_hui/" title="阅读全文" id="yuedu">阅读全文</a>
+    </div>
+    
+     
+     
+      <div class="clear"></div>
+    </section>
+    <div class="clear"></div>
+        <section class="list"> <span class="titleimg">
+     <div class="mecc">
+      <h2 class="mecctitle"> <a href="http://blog.zhugeio.com/zhu_ge_io_fa_bu_cross_ban_zhi_chi_duo_ping_tai_shu_ju_zheng_he_fen_xi/">
+        诸葛io发布CROSS版 支持多平台数据整合分析        </a> 
+      </h2>
+      <address class="meccaddress">
+        诸葛io 
+        <time>
+          05.24       </time>
+        
+      </address>
+      <span class="titleimg">
+      
+        <a href="http://blog.zhugeio.com/zhu_ge_io_fa_bu_cross_ban_zhi_chi_duo_ping_tai_shu_ju_zheng_he_fen_xi/">
+                    <img src="http://blog.zhugeio.com/wp-content/themes/yzipi/images/blog_03.png" style="display:none"/>
+                  </a> 
+        
+        
+        
+      </span>  
+      <p>在终端，场景，推送目的等日益多元化的今天，一个用户可能在APP上登录注册浏览，在公众号/web站上“领优惠券”，在PC端官网使用优惠券，完成购买支付流程，从用户角度来说，通过H5、小程序等不同形式，领取红包，获取企业推广活动、商品促销的资讯。从商家/企业角度，在不同平台（JS/ios/Android）上用户行为已...</p>           
+      <a href="http://blog.zhugeio.com/zhu_ge_io_fa_bu_cross_ban_zhi_chi_duo_ping_tai_shu_ju_zheng_he_fen_xi/" title="阅读全文" id="yuedu">阅读全文</a>
+    </div>
+    
+     
+     
+      <div class="clear"></div>
+    </section>
+    <div class="clear"></div>
+            <!--list-->
+        <div class="pagenavi">
+      <span class="page-numbers">1 / 8 </span> <span class='page-numbers current'>1</span> <a class='page-numbers' href='http://blog.zhugeio.com/page/2/' title='第 2 页'>2</a> <a class='page-numbers' href='http://blog.zhugeio.com/page/3/' title='第 3 页'>3</a> <span class="page-numbers">...</span><a class='page-numbers' href='http://blog.zhugeio.com/page/8/' title='最末页'>8</a> <a class='page-numbers' href='http://blog.zhugeio.com/page/2/' title='下一页'>下一页</a>     </div>
+        <!--Page End-->
+      <nav class="navigation">
+        <div class="nav-previous"><a href="http://blog.zhugeio.com/page/2/" >下一页</a></div>
+      
+        </nav><!-- .navigation -->
+      <!--phonepage--> 
+  </div>
+  <!--Container-->
+  <aside id="sitebar">
+  <div class="sitebar_list">
+    <div class="sitebar_title">
+      <h4>热门文章</h4>
+    </div>
+    <ul class="sitebar_list_ul">
+            <li><a href="http://blog.zhugeio.com/e3808ae8bf91e58ca0e3808be4b893e8aebf-e8afb8e8919bio-e5ad94e6b7bcefbc/" title="《近匠》专访 诸葛io：精细化运营核心用户大数据" class="articlelist"> 《近匠》专访 诸葛io：精细化运营核心用户大数据</a></li>
+            <li><a href="http://blog.zhugeio.com/e588abe890bde5908ee4ba86efbc8ce5bc80e5a78be4bda0e79a84e7acace4b880/" title="别落后了，开始你的第一方数据分析" class="articlelist"> 别落后了，开始你的第一方数据分析</a></li>
+            <li><a href="http://blog.zhugeio.com/liuliangshidaijinruweishengjingxihuayunyingzhujiantidaicufangshiyunyingmoshi/" title="流量时代进入尾声，精细化运营逐渐替代粗放式运营模式" class="articlelist"> 流量时代进入尾声，精细化运营逐渐替代粗放式运营模式</a></li>
+            <li><a href="http://blog.zhugeio.com/e4b8bae4bb80e4b988e695b0e68daee58886e69e90e697a0e6b395e8aea9e4baa7/" title="数据分析助力产品走向成功的三个层次" class="articlelist"> 数据分析助力产品走向成功的三个层次</a></li>
+            <li><a href="http://blog.zhugeio.com/zhi_bo_xing_ye_yi_pian_hong_hai_shui_jiang_sha_chu_zhong_wei_wen_ding_zhong_yuan/" title="直播行业，一片红海，谁将杀出重围，“问鼎中原”？" class="articlelist"> 直播行业，一片红海，谁将杀出重围，“问鼎中原”？</a></li>
           </ul>
-        '>更多分享</a>
-      </div>
-    </div>
-    <div id="vue_comment"></div>
   </div>
+  <div class="sitebar_list">
+    <div class="sitebar_title">
+      <h4>标签</h4>
+    </div>
+    <div class="tagcloud">
+    <a href='http://blog.zhugeio.com/tag/fa_bu_hui/' class='tag-link-39' title='4个话题' style='font-size: 22pt;'>发布会</a>
+<a href='http://blog.zhugeio.com/tag/zhu_ge_io_fintech_club/' class='tag-link-34' title='3个话题' style='font-size: 18.5pt;'>诸葛io FinTech Club</a>
+<a href='http://blog.zhugeio.com/tag/zhugeio/' class='tag-link-17' title='3个话题' style='font-size: 18.5pt;'>诸葛io</a>
+<a href='http://blog.zhugeio.com/tag/ke_ji_jin_rong/' class='tag-link-33' title='2个话题' style='font-size: 14.3pt;'>科技金融</a>
+<a href='http://blog.zhugeio.com/tag/zhu_ge_io_zhou_nian_ji/' class='tag-link-24' title='2个话题' style='font-size: 14.3pt;'>诸葛io周年记</a>
+<a href='http://blog.zhugeio.com/tag/growthhacking/' class='tag-link-16' title='2个话题' style='font-size: 14.3pt;'>Growth Hacking</a>
+<a href='http://blog.zhugeio.com/tag/huo_qu_fen_xi/' class='tag-link-29' title='1个话题' style='font-size: 8pt;'>获取分析</a>
+<a href='http://blog.zhugeio.com/tag/api2_0/' class='tag-link-28' title='1个话题' style='font-size: 8pt;'>API2.0</a>
+<a href='http://blog.zhugeio.com/tag/kan_ban/' class='tag-link-27' title='1个话题' style='font-size: 8pt;'>看板</a>
+<a href='http://blog.zhugeio.com/tag/shu_ju_xun_zhan/' class='tag-link-30' title='1个话题' style='font-size: 8pt;'>数据巡展</a>
+<a href='http://blog.zhugeio.com/tag/shen_zhen/' class='tag-link-31' title='1个话题' style='font-size: 8pt;'>深圳</a>
+<a href='http://blog.zhugeio.com/tag/huang_yun_song/' class='tag-link-43' title='1个话题' style='font-size: 8pt;'>黄允松</a>
+<a href='http://blog.zhugeio.com/tag/hei_ke_song/' class='tag-link-44' title='1个话题' style='font-size: 8pt;'>黑客松</a>
+<a href='http://blog.zhugeio.com/tag/xing_ye_jie_jue_fang_an/' class='tag-link-45' title='1个话题' style='font-size: 8pt;'>行业解决方案</a>
+<a href='http://blog.zhugeio.com/tag/liu_cun/' class='tag-link-40' title='1个话题' style='font-size: 8pt;'>留存</a>
+<a href='http://blog.zhugeio.com/tag/kua_ping_tai_fen_xi/' class='tag-link-38' title='1个话题' style='font-size: 8pt;'>跨平台分析</a>
+<a href='http://blog.zhugeio.com/tag/guang_gao_jian_ce/' class='tag-link-32' title='1个话题' style='font-size: 8pt;'>广告监测</a>
+<a href='http://blog.zhugeio.com/tag/feng_kong/' class='tag-link-35' title='1个话题' style='font-size: 8pt;'>风控</a>
+<a href='http://blog.zhugeio.com/tag/qi_xin_bao/' class='tag-link-36' title='1个话题' style='font-size: 8pt;'>启信宝</a>
+<a href='http://blog.zhugeio.com/tag/cross_ban/' class='tag-link-37' title='1个话题' style='font-size: 8pt;'>CROSS版</a>  </div>
+  </div>
+  <!--tag-->
+  
 
-  <div class="vue-side-tool"></div>
+</aside>
+<script>
+
+$('.articlelist').click(function(){
+     zhuge.track('Blog-点击热门文章',{
+      '类型':'字符',
+      '标题':''
+    })
+  });
+  $('.tagcloud').click(function(){
+     zhuge.track('Blog-点击热门标签',{
+      '类型':'字符',
+      '标签':''
+      
+    })
+  });
+      
+</script>  <div class="clear"></div>
 </div>
-<div class="js-included-collections"></div>
+<!--main-->
+<footer id="dibu">
+ <div class="footer">
+        <div class="zhugeinner">
+            <div class="fluid ">
+                <div class="grid2">
+                        <h3>诸葛io</h3>
+                        <a href="http://help.zhugeio.com/hc/kb/category/16231/" target="_blank">快速入门</a>
+                        <a href="http://help.zhugeio.com/">帮助</a>
+                        <a href="/price/price.html">价格</a>
+                        <a href="http://help.zhugeio.com/hc/kb/category/16109/">常见问题</a>
+                </div>
+                <div class="grid2">
+                        <h3>功能</h3>
+                        <a href="https://zhugeio.com/products/events.html">事件</a>
+                        <a href="https://zhugeio.com/products/funnels.html">漏斗</a>
+                        <a href="https://zhugeio.com/products/retention.html">留存</a>
+                        <a href="https://zhugeio.com/products/cohorts.html">用户分群</a>
+            <a href="https://zhugeio.com/products/insights.html">用户洞察</a>
+                </div>
+                    <div class="grid2">
+                        <h3>公司</h3>
+                        <a href="https://zhugeio.com/aboutus/aboutus.html">关于我们</a>
+                        <a href="http://www.lagou.com/gongsi/j84244.html">加入我们</a>
+                </div>
+                <div class="grid4">
+                        <h3>联系方式</h3>
+                        <ul class="footer_address">
+                            <li><span class="icon_1"></span>info@zhugeio.com</li>
+                            <li><span class="icon_2"></span>40080-94843</li>
+                            <li><span class="icon_3"></span>4008094843</li>
+                            <li><span class="icon_4"></span>北京市朝阳区工体北路4号院 79 office 4层410室</li>
+                        </ul>
+                </div>
+                <div class="grid2">
+                        <img src="http://blog.zhugeio.com/wp-content/themes/yzipi/images/erweima.jpg" >
+                        <p>官方微信号：zhugeio</p>
+                        <a href="http://weibo.com/zhugeIO" target="_blank" STYLE="display: block;text-align: center"> <img src="http://blog.zhugeio.com/wp-content/themes/yzipi/images/footer-btn.png" ></a>
+                </div>
+        <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+  
+  <div class="about">
+    <div class="right">
+ 
+      <p class="banquan">
+        GrowthHacking &amp; 数据驱动 &#8211; 诸葛io        ，
+        精细化数据分析工具      </p>
+    </div>
+    <div class="left">
+      <ul class="bottomlist">
+     
+      </ul>
+    </div>
+  </div>
+  <!--about-->
+  <div class="bottom">
+    GrowthHacking &amp; 数据驱动 &#8211; 诸葛io   <a href="http://www.miitbeian.gov.cn/">©zhugeio.com 京ICP备15049545号</a><div class="tongji">
+  </div>
+  <!--bottom--> 
+  
+  
+</footer>
+<!--dibu-->
+<script type='text/javascript' src='http://blog.zhugeio.com/wp-includes/js/wp-embed.min.js?ver=4.4.2'></script>
+</body></html><script>
+zhuge.track("blog", {
+    '事件名称': 'Blog-进入Blog',
+});
 
-    <script type="application/json" data-name="page-data">{"user_signed_in":false,"locale":"zh-CN","os":"mac","read_mode":"day","read_font":"font2","note_show":{"is_author":false,"is_following_author":false,"is_liked_note":false,"uuid":"8ccece4f-812c-455e-9d3a-90336b21f2d5"},"note":{"id":3636486,"slug":"fa38ef97431d","user_id":1031810,"notebook_id":3977725,"commentable":true,"likes_count":19,"views_count":1912,"public_wordage":777,"comments_count":2,"author":{"total_wordage":97534,"followers_count":4109,"total_likes_count":10392}}}</script>
-    
-    <script src="//cdn2.jianshu.io/assets/babel-polyfill-95e304998225f0f3021d.js"></script>
-    <script src="//cdn2.jianshu.io/assets/web-base-95e304998225f0f3021d.js"></script>
-<script src="//cdn2.jianshu.io/assets/web-95e304998225f0f3021d.js"></script>
-    
-    <script src="//cdn2.jianshu.io/assets/web/pages/notes/show/entry-95e304998225f0f3021d.js"></script>
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-35169517-1', 'auto');
-  ga('send', 'pageview');
 </script>
-
-<script>
-  var _hmt = _hmt || [];
-  (function() {
-    var hm = document.createElement("script");
-    hm.src = "//hm.baidu.com/hm.js?0c0e9d9b1e7d617b3e6842e85b9fb068";
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(hm, s);
-  })();
-</script>
-
-<script>
-  (function(){
-      var bp = document.createElement('script');
-      var curProtocol = window.location.protocol.split(':')[0];
-      if (curProtocol === 'https') {
-          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-      }
-      else {
-          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-      }
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(bp, s);
-  })();
-</script>
-
-  </body>
-</html>
