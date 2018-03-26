@@ -1,0 +1,86 @@
+body.mindly {
+  font-family: Helvetica Neue, Arial, sans-serif;
+  margin: 0px
+}
+
+div.mindly-main {
+  cursor: pointer; 
+  cursor: hand; 
+
+  /* remove highlight from mobile safari */
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+div.mindly-note-view {
+    position: relative;
+    overflow-y: auto;
+}
+
+.mindly-note-view th {
+  text-align: left;
+}
+
+.mindly-close-button {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.mindly-maximize-button {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.mindly-text-element {
+  height: 100%;
+  width: 100%;
+  user-select: none;
+  /* background: red; */
+}
+
+
+.mindly-text-element:before {
+  content: '';
+  display: inline-block;
+  height: 100%; 
+  vertical-align: middle;
+  margin-right: 0;
+}
+
+.mindly-text-element-content {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  /* background: blue; */
+}
+
+.mindly-browser-unsupported {
+  box-sizing: border-box;
+  position: 'relative';
+}
+
+.mindly-browser-unsupported-centered {
+  padding-top: 2vmax;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mindly-browser-unsupported-centered > h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 2vmax;
+  font-weight: 300;
+  color: #656567;
+}
+
+.mindly-browser-unsupported-centered > p {
+  width: 100%;
+  margin-top: 3vmax;;
+  text-align: center;
+  font-size: 1.5vmax;
+  font-weight: 300;
+  color: #656567;
+}
