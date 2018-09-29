@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+ <meta charset="utf-8" />
+</head>
+<body>
+    <div>macOS url :   <input id="text" width="1200" onchange ="print()"/></div>
+    <br>
+    <div>输入macOS url后回车，即可生成windows url</div>
+    <br>
+    <div>windows url：<textarea id="result"> </textarea></div>
+    <script type="text/javascript">
+        function print() {
+            var url = document.getElementById("text").value;
+
+            var reg = new RegExp('/', "g")
+            url = url.toString().replace("/Volumes", "\\\\172.16.10.19").replace(reg, "\\")
+            result.value = url.toString();
+        }
+
+    </script>
+
+</body>
+</html>
