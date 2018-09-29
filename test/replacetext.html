@@ -15,7 +15,7 @@
             var url = document.getElementById("text").value;
 
             var reg = new RegExp('/', "g")
-            url = url.toString().replace("/Volumes", "\\\\172.16.10.19").replace(reg, "\\")
+            url = url.toString().replace("/Volumes", "\\\\192.168.0.1").replace(reg, "\\")
             result.value = url.toString();
         }
 
